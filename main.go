@@ -110,10 +110,6 @@ func choise_char_class() string {
 	return char_class
 }
 
-func randint(min, max int) int {
-	return rand.Intn(max-min) + min
-}
-
 // обратите внимание на имена переменных
 func main() {
 	fmt.Println("Приветствую тебя, искатель приключений!")
@@ -131,4 +127,7 @@ func main() {
 	char_class := choise_char_class()
 
 	fmt.Println(start_training(char_name, char_class))
+}
+func randint(min, max int) int {
+	return rand.Intn(max-min) + min
 }
